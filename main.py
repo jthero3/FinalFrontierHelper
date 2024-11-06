@@ -353,8 +353,9 @@ class MainWindow(QMainWindow):
 
         # Create the directory path in the main directory
         directory_path = os.path.join(
-            os.getcwd(), body_name
+            os.getcwd(), f"GameData/Nereid/FinalFrontier/Ribbons/{body_name}"
         )  # Folder in main directory
+        # Directory: Kerbal Space Program\GameData\Nereid\FinalFrontier\Ribbons
 
         # Check if the directory already exists, and create it if it doesn't
         if not os.path.exists(directory_path):
